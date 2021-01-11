@@ -3,7 +3,7 @@ if (!empty($_GET["cardName"])){
     $scryfall_Url="https://api.scryfall.com/cards/search?order=name&q=".($_GET["cardName"]);
     $scryfall_json = file_get_contents($scryfall_Url);
     $scryfall_array = json_decode($scryfall_json,true);
-    //$scryfall_array["name"]["mana_cost"]["oracle_text"];
+    
     
     
     
